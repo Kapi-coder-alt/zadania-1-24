@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Wojciechowski - zadanie 12</title>
+</head>
+<body>
+  <div style="color:green;font-size:36px;">
+    <script language="JavaScript">
+      // Kacper Wojciechowski 3F 09.10.2026
+      // Zadanie 12
+      var D1_woj=prompt("Dzień1 (D1)=","");
+      var G1_woj=prompt("Godzina1 (G1)=","");
+      var D2_woj=prompt("Dzień2 (D2)=","");
+      var G2_woj=prompt("Godzina2 (G2)=","");
+      var sekund;
+      var d1=parseFloat(D1_woj);
+      var g1=parseFloat(G1_woj);
+      var d2=parseFloat(D2_woj);
+      var g2=parseFloat(G2_woj);
+      sekund=((d1-d2)*24+(g1-g2))*60*60;
+      document.write("Ilość sekund między "+d1+" dniem godz. "+g1+" a "+d2+" dniem godz. "+g2+" = "+sekund+"<br>");
+      function okno_zamknij_wojciechowski()
+      {
+        window.close()
+      }
+    </script>
+  </div>
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski()"/>
+</body>
+</html>

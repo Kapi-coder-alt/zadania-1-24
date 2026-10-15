@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Wojciechowski - zadanie 11</title>
+</head>
+<body>
+  <div style="color:green;font-size:36px;">
+    <script language="JavaScript">
+      // Kacper Wojciechowski 3F 09.10.2026
+      // Zadanie 11
+      var D1_woj=prompt("Data1=","");
+      var D2_woj=prompt("Data2=","");
+      var sekund;
+      var a=parseFloat(D1_woj);
+      var b=parseFloat(D2_woj);
+      sekund=(a-b)*24*60*60;
+      document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>");
+      function okno_zamknij_wojciechowski()
+      {
+        window.close()
+      }
+    </script>
+  </div>
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski()"/>
+</body>
+</html>

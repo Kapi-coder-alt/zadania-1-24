@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Wojciechowski - zadanie 16</title>
+</head>
+<body style="margin:8px;">
+  <div style="color:navy;">
+    <script language="JavaScript">
+      // Kacper Wojciechowski 3F 09.10.2026
+      // Zadanie 16
+      var A_woj=prompt("Podaj pierwszą liczbę  A=","");
+      var B_woj=prompt("Podaj drugą liczbę  B=","");
+      var A=parseFloat(A_woj);
+      var B=parseFloat(B_woj);
+      var wynik=(A+B)*(A+B)*(A+B);
+      var t1=A*A*A;
+      var t2=3*A*A*B;
+      var t3=3*A*B*B;
+      var t4=B*B*B;
+      document.write("<div style='font-size:24px;'>wczytane liczby:&nbsp;&nbsp;&nbsp;&nbsp;A="+A+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B="+B+"</div>");
+      document.write("<span id='linia2' style='white-space:nowrap; font-size:20px;'>("+A+" + "+B+")^3= "+A+"^3 + 3*(("+A+")^2)*("+B+") + 3*("+A+")*(("+B+")^2) + "+B+"^3 = "+t1+" + "+t2+" + "+t3+" + "+t4+" = "+wynik+"</span>");
+      // dopasowanie wielkości liter, aby druga linia zajmowała całą szerokość ekranu
+      var linia=document.getElementById("linia2");
+      var szer=document.body.clientWidth;
+      linia.style.fontSize=(20*szer/linia.offsetWidth)+"px";
+      function okno_zamknij_wojciechowski()
+      {
+        window.close()
+      }
+    </script>
+  </div>
+  <br>
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski()"/>
+</body>
+</html>

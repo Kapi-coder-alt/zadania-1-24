@@ -1,0 +1,47 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Wojciechowski - kod zadania 16</title>
+</head>
+<body>
+  <textarea cols="90" rows="24">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Wojciechowski - zadanie 16&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style="margin:8px;"&gt;
+  &lt;div style="color:navy;"&gt;
+    &lt;script language="JavaScript"&gt;
+      // Kacper Wojciechowski 3F 09.10.2026
+      // Zadanie 16
+      var A_woj=prompt("Podaj pierwszą liczbę  A=","");
+      var B_woj=prompt("Podaj drugą liczbę  B=","");
+      var A=parseFloat(A_woj);
+      var B=parseFloat(B_woj);
+      var wynik=(A+B)*(A+B)*(A+B);
+      var t1=A*A*A;
+      var t2=3*A*A*B;
+      var t3=3*A*B*B;
+      var t4=B*B*B;
+      document.write("&lt;div style='font-size:24px;'&gt;wczytane liczby:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;A="+A+"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;B="+B+"&lt;/div&gt;");
+      document.write("&lt;span id='linia2' style='white-space:nowrap; font-size:20px;'&gt;("+A+" + "+B+")^3= "+A+"^3 + 3*(("+A+")^2)*("+B+") + 3*("+A+")*(("+B+")^2) + "+B+"^3 = "+t1+" + "+t2+" + "+t3+" + "+t4+" = "+wynik+"&lt;/span&gt;");
+      // dopasowanie wielkości liter, aby druga linia zajmowała całą szerokość ekranu
+      var linia=document.getElementById("linia2");
+      var szer=document.body.clientWidth;
+      linia.style.fontSize=(20*szer/linia.offsetWidth)+"px";
+      function okno_zamknij_wojciechowski()
+      {
+        window.close()
+      }
+    &lt;/script&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski()"/&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+  </textarea>
+</body>
+</html>

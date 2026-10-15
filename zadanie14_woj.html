@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Wojciechowski - zadanie 14</title>
+</head>
+<body>
+  <div style="color:black;font-size:30px;">
+    <script language="JavaScript">
+      // Kacper Wojciechowski 3F 09.10.2026
+      // Zadanie 14
+      var m_woj=prompt("m=","");
+      var m=parseFloat(m_woj);
+      // 1/m = 1/(m+1) + 1/(m*(m+1))
+      // 1/(m+1) = 1/(m+2) + 1/((m+1)*(m+2))
+      var p=m+1;
+      var q=m*(m+1);
+      var r=m+2;
+      var s=(m+1)*(m+2);
+      document.write("Rozkład ułamka egipskiego na trzy ułamki egipskie<br>");
+      document.write("1/"+m+" = 1/"+p+" + 1/"+q+"<br>");
+      document.write("1/"+p+" = 1/"+r+" + 1/"+s+"<br>");
+      document.write("1/"+m+" = 1/"+r+" + 1/"+s+" + 1/"+q+"<br>");
+      function okno_zamknij_wojciechowski()
+      {
+        window.close()
+      }
+    </script>
+  </div>
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski()"/>
+</body>
+</html>
