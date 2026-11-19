@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>Wojciechowski 3F - zadanie 18 - użycie funkcji</title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:navy;font-size:50px;">
+<script language="JavaScript">
+// Kacper Wojciechowski 3F nr 27 - zadanie 18
+var a=parseFloat(prompt("a=",""));
+var b=parseFloat(prompt("b=",""));
+
+function suma_woj(a, b) {
+  return a + b;
+}
+function odejmowanie_woj(a, b) {
+  return a - b;
+}
+function mnozenie_woj(a, b) {
+  return a * b;
+}
+function od_kwadratu_woj(a, b) {
+  document.write(a+"^2 = "+(a*a)+"<br>");
+  document.write(b+"^2 = "+(b*b)+"<br>");
+}
+function reszta_z_dzielenia_a_przez_b_woj(a, b) {
+  return a % b;
+}
+
+document.write("a="+a+" &nbsp;&nbsp; b="+b+"<br>");
+document.write("suma="+suma_woj(a,b)+"<br>");
+document.write("różnica="+odejmowanie_woj(a,b)+"<br>");
+document.write("iloczyn="+mnozenie_woj(a,b)+"<br>");
+od_kwadratu_woj(a,b);
+document.write("reszta z dzielenia a przez b="+reszta_z_dzielenia_a_przez_b_woj(a,b)+"<br>");
+
+function okno_zamknij_wojciechowski()
+{
+  window.close()
+}
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski()">
+</body>
+</html>

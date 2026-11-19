@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Wojciechowski 3F - zadanie 23</title>
+<script type="text/javascript">
+// Kacper Wojciechowski 3F nr 27 - zadanie 23
+// długość drabiny z twierdzenia Pitagorasa: l = sqrt(d^2 + x^2)
+function dlugosc_drabiny_woj(d_woj, x_woj)
+{
+  return Math.sqrt(d_woj*d_woj + x_woj*x_woj);
+}
+// kąt nachylenia: alfa = arctg(d/x), zamiana radianów na stopnie
+function kat_drabiny_woj(d_woj, x_woj)
+{
+  return Math.atan(d_woj/x_woj)*180/Math.PI;
+}
+function oblicz_woj()
+{
+  var d_woj = parseFloat(document.getElementsByName('d')[0].value);
+  var x_woj = parseFloat(document.getElementsByName('x')[0].value);
+  document.getElementsByName('drabina')[0].value = dlugosc_drabiny_woj(d_woj, x_woj).toFixed(2);
+  document.getElementsByName('alfa')[0].value = kat_drabiny_woj(d_woj, x_woj).toFixed(2);
+}
+function okno_zamknij_wojciechowski()
+{
+  window.close()
+}
+</script>
+</head>
+<body>
+<h3>Obliczanie odległości od drabiny i kąta</h3>
+Podaj d= <input type="text" name="d" size="8" value="3">
+Podaj x= <input type="text" name="x" size="8" value="4">
+<br><br>
+<input type="button" value="oblicz" onclick="oblicz_woj()">
+<br><br>
+Drabina= <input type="text" name="drabina" size="8">
+Alfa= <input type="text" name="alfa" size="8">
+<br><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski()">
+</body>
+</html>

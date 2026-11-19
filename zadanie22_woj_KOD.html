@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wojciechowski - kod zadania 22</title>
+</head>
+<body>
+<textarea cols="90" rows="34">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;Wojciechowski 3F - zadanie 22&lt;/title&gt;
+&lt;script type="text/javascript"&gt;
+// Kacper Wojciechowski 3F nr 27 - zadanie 22
+function Pole_wojciechowski(a_woj, b_woj)
+{
+  return a_woj*b_woj;
+}
+function obwod_wojciechowski(a_woj, b_woj)
+{
+  return 2*a_woj + 2*b_woj;
+}
+function oblicz_woj()
+{
+  var a_woj = parseFloat(document.getElementsByName('a_dana_woj')[0].value);
+  var b_woj = parseFloat(document.getElementsByName('b_dana_woj')[0].value);
+  var p = Pole_wojciechowski(a_woj, b_woj);
+  var o = obwod_wojciechowski(a_woj, b_woj);
+  document.getElementById('wyprowadz_pole_woj').innerHTML = "Pole = " + p.toFixed(2) + " cm^2";
+  document.getElementById('wyprowadz_obwod_woj').innerHTML = "Obwód = " + o.toFixed(2) + " cm";
+  document.getElementsByName('pole')[0].value = p.toFixed(2);
+  document.getElementsByName('obw')[0].value = o.toFixed(2);
+}
+function okno_zamknij_wojciechowski()
+{
+  window.close()
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Pole i obwód prostokąta&lt;/h2&gt;
+Podaj a= &lt;input type="text" name="a_dana_woj" size="6" value="3"&gt;
+Podaj b= &lt;input type="text" name="b_dana_woj" size="6" value="4"&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;input type="button" value="oblicz" onclick="oblicz_woj()"&gt;
+&lt;br&gt;&lt;br&gt;
+Pole= &lt;input type="text" name="pole" size="8"&gt;
+Obwód= &lt;input type="text" name="obw" size="8"&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;table&gt;
+  &lt;tr&gt;&lt;td id="wyprowadz_pole_woj"&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td id="wyprowadz_obwod_woj"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski()"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wojciechowski - kod zadania 20</title>
+</head>
+<body>
+<textarea cols="90" rows="36">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;Wojciechowski 3F - zadanie 20&lt;/title&gt;
+&lt;script type="text/javascript"&gt;
+// Kacper Wojciechowski 3F nr 27 - zadanie 20
+// odległość między punktami: |FG| = sqrt((x1-x2)^2 + (y1-y2)^2)
+function dlugosc_woj(x1, y1, x2, y2)
+{
+  return Math.sqrt(Math.pow(x1-x2,2) + Math.pow(y1-y2,2));
+}
+function wczytaj_woj()
+{
+  xa_woj = parseFloat(document.getElementById('xa').value);
+  ya_woj = parseFloat(document.getElementById('ya').value);
+  xb_woj = parseFloat(document.getElementById('xb').value);
+  yb_woj = parseFloat(document.getElementById('yb').value);
+  xc_woj = parseFloat(document.getElementById('xc').value);
+  yc_woj = parseFloat(document.getElementById('yc').value);
+}
+function AB_woj()
+{
+  wczytaj_woj();
+  var d = dlugosc_woj(xa_woj, ya_woj, xb_woj, yb_woj);
+  document.getElementById('wynikAB').innerHTML = "|AB| = " + d.toFixed(2);
+}
+function BC_woj()
+{
+  wczytaj_woj();
+  var d = dlugosc_woj(xb_woj, yb_woj, xc_woj, yc_woj);
+  document.getElementById('wynikBC').innerHTML = "|BC| = " + d.toFixed(2);
+}
+function AC_woj()
+{
+  wczytaj_woj();
+  var d = dlugosc_woj(xa_woj, ya_woj, xc_woj, yc_woj);
+  document.getElementById('wynikAC').innerHTML = "|AC| = " + d.toFixed(2);
+}
+function wszystkie_woj()
+{
+  AB_woj(); BC_woj(); AC_woj();
+}
+function okno_zamknij_wojciechowski()
+{
+  window.close()
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Długości boków trójkąta ABC&lt;/h2&gt;
+A: x=&lt;input type="text" id="xa" size="5" value="0"&gt; y=&lt;input type="text" id="ya" size="5" value="0"&gt;&lt;br&gt;&lt;br&gt;
+B: x=&lt;input type="text" id="xb" size="5" value="4"&gt; y=&lt;input type="text" id="yb" size="5" value="0"&gt;&lt;br&gt;&lt;br&gt;
+C: x=&lt;input type="text" id="xc" size="5" value="0"&gt; y=&lt;input type="text" id="yc" size="5" value="3"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="button" value="Oblicz AB" onclick="AB_woj()"&gt;
+&lt;input type="button" value="Oblicz BC" onclick="BC_woj()"&gt;
+&lt;input type="button" value="Oblicz AC" onclick="AC_woj()"&gt;
+&lt;input type="button" value="Oblicz wszystkie" onclick="wszystkie_woj()"&gt;&lt;br&gt;&lt;br&gt;
+&lt;div id="wynikAB" style="color:red;font-size:24px;"&gt;&lt;/div&gt;
+&lt;div id="wynikBC" style="color:red;font-size:24px;"&gt;&lt;/div&gt;
+&lt;div id="wynikAC" style="color:red;font-size:24px;"&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski()"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</body>
+</html>

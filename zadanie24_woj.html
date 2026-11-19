@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Wojciechowski 3F - zadanie 24</title>
+</head>
+<body>
+<div style="display:inline-block; background:#c0c0c0; color:blue; font-family:Arial,sans-serif; font-size:24px; padding:10px;">
+<script language="JavaScript">
+// Kacper Wojciechowski 3F nr 27 - zadanie 24
+var x1_woj = parseFloat(prompt("Podaj x1 (w stopniach)=",""));
+var x2_woj = parseFloat(prompt("Podaj x2=",""));
+
+// liczba liter imienia: Kacper = 6
+var n = 6;
+var y1 = 3*Math.pow(x1_woj, n/(n+2));
+
+// x1 wczytane w stopniach -> radiany: rad=(st*Math.PI)/180
+var x1_rad = (x1_woj*Math.PI)/180;
+var y2 = 2*Math.cos(x1_rad) + 3*Math.sin(x1_rad);
+
+var y3 = Math.cbrt(Math.pow(x1_woj,5) + 2*Math.pow(x2_woj,4)) * Math.abs(x1_woj - x2_woj);
+
+document.write("x1 = "+x1_woj+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x2 = "+x2_woj+"<br>");
+document.write("x1 = "+x1_woj+" [stopniach]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x1 = "+x1_rad.toFixed(2)+" [radianach]<br>");
+document.write("y1 = "+y1.toFixed(2)+"<br>");
+document.write("y2 = "+y2.toFixed(2)+"<br>");
+document.write("y3 = "+y3.toFixed(2)+"<br>");
+
+function okno_zamknij_wojciechowski()
+{
+  window.close()
+}
+</script>
+</div>
+<br><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski()">
+</body>
+</html>

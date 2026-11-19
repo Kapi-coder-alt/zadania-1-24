@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wojciechowski - kod zadania 17</title>
+</head>
+<body>
+<textarea cols="90" rows="34">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Wojciechowski 3F - zadanie 17&lt;/title&gt;
+&lt;style&gt;
+body { font-family: Arial, sans-serif; margin: 10px; }
+table { border-collapse: collapse; }
+td, th { border: 1px solid black; padding: 4px 8px; }
+&lt;/style&gt;
+&lt;script&gt;
+// Kacper Wojciechowski 3F nr 27 - zadanie 17 (teoria)
+function okno_zamknij_wojciechowski()
+{
+  window.close()
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Zadanie 17 - zadanie teoretyczne&lt;/h2&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;u&gt;1. Wymień cztery sposoby wyprowadzania danych w JS.&lt;/u&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;z użyciem &lt;b&gt;&lt;u&gt;document.write()&lt;/u&gt;&lt;/b&gt;,&lt;/li&gt;
+  &lt;li&gt;z użyciem okienka &lt;b&gt;&lt;u&gt;alert()&lt;/u&gt;&lt;/b&gt;,&lt;/li&gt;
+  &lt;li&gt;do &lt;b&gt;&lt;u&gt;okienek formularza&lt;/u&gt;&lt;/b&gt; (pole input, właściwość value),&lt;/li&gt;
+  &lt;li&gt;do &lt;b&gt;&lt;u&gt;tabeli&lt;/u&gt;&lt;/b&gt; (np. przez innerHTML).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;u&gt;2. Czym jest funkcja w JS, omów przy użyciu 4 podpunktów?&lt;/u&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Jest to &lt;b&gt;&lt;u&gt;zbiór zgrupowanych instrukcji&lt;/u&gt;&lt;/b&gt;, które uruchamiamy, podając ich nazwę.&lt;/li&gt;
+  &lt;li&gt;Każda funkcja po wywołaniu &lt;b&gt;&lt;u&gt;wykonuje swój wewnętrzny kod&lt;/u&gt;&lt;/b&gt;.&lt;/li&gt;
+  &lt;li&gt;Funkcja może mieć &lt;b&gt;&lt;u&gt;argumenty&lt;/u&gt;&lt;/b&gt;, które wchodzą do jej wnętrza i są tam przetwarzane, np. suma_woj(a, b).&lt;/li&gt;
+  &lt;li&gt;Może (nie zawsze) &lt;b&gt;&lt;u&gt;zwrócić obliczoną wartość&lt;/u&gt;&lt;/b&gt; zapisaną po słowie kluczowym return.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;u&gt;3. Omów metody getElementsByName, getElementById, getElementsByTagName.&lt;/u&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Metoda&lt;/th&gt;&lt;th&gt;Opis&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;u&gt;getElementById("id")&lt;/u&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;dostęp do elementu o konkretnej wartości atrybutu id&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;u&gt;getElementsByTagName("znacznik")&lt;/u&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;dostęp do wszystkich elementów o danym typie znacznika, np. P lub DIV&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;u&gt;getElementsByName("nazwa")&lt;/u&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;dostęp do wszystkich elementów o konkretnej wartości atrybutu name&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;u&gt;4. Omów właściwości innerHTML, innerText, className (każdą osobno).&lt;/u&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;&lt;u&gt;innerHTML&lt;/u&gt;&lt;/b&gt; - umożliwia odczyt, zmodyfikowanie, wstawienie albo usunięcie kodu HTML z danego elementu, np. w tabeli.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;&lt;u&gt;innerText&lt;/u&gt;&lt;/b&gt; - umożliwia określenie ciągu znaków, który zostanie umieszczony w elemencie.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;&lt;u&gt;className&lt;/u&gt;&lt;/b&gt; - umożliwia określenie klasy CSS użytej do prezentacji elementu.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;form&gt;
+&lt;input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski()"&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</body>
+</html>

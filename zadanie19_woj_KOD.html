@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wojciechowski - kod zadania 19</title>
+</head>
+<body>
+<textarea cols="90" rows="30">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;Wojciechowski 3F - zadanie 19&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type="text/javascript"&gt;
+// Kacper Wojciechowski 3F nr 27 - zadanie 19
+function Pole_wojciechowski()
+{
+  var a_woj = parseFloat(document.getElementById('dlugosc').value);
+  var b_woj = a_woj*a_woj;
+  document.getElementById("nazwa").innerHTML = "Pole kwadratu= "+b_woj.toFixed(2)+" cm^2";
+}
+function obwod_wojciechowski()
+{
+  var a_woj = parseFloat(document.getElementById('dlugosc').value);
+  var b_woj = 4*a_woj;
+  document.getElementById("nazwa").innerHTML = "Obwód kwadratu= "+b_woj.toFixed(2)+" cm";
+}
+function okno_zamknij_wojciechowski()
+{
+  window.close()
+}
+&lt;/script&gt;
+&lt;h1&gt;Wszystko o KWADRACIE&lt;/h1&gt;&lt;br&gt;&lt;br&gt;
+Podaj długość boku: &lt;input type="text" id="dlugosc" value="podaj długość"&gt; cm&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="button" name="pole" value="Oblicz pole" onclick="Pole_wojciechowski()"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="button" name="obwod" value="Oblicz obwod" onclick="obwod_wojciechowski()"&gt;&lt;br&gt;&lt;br&gt;
+&lt;div style="color:red;font-size:50px;" id="nazwa"&gt;&lt;/div&gt;
+&lt;input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski()"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</body>
+</html>

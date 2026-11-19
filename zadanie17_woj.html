@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Wojciechowski 3F - zadanie 17</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 10px; }
+table { border-collapse: collapse; }
+td, th { border: 1px solid black; padding: 4px 8px; }
+</style>
+<script>
+// Kacper Wojciechowski 3F nr 27 - zadanie 17 (teoria)
+function okno_zamknij_wojciechowski()
+{
+  window.close()
+}
+</script>
+</head>
+<body>
+<h2>Zadanie 17 - zadanie teoretyczne</h2>
+
+<p><b><u>1. Wymień cztery sposoby wyprowadzania danych w JS.</u></b></p>
+<ul>
+  <li>z użyciem <b><u>document.write()</u></b>,</li>
+  <li>z użyciem okienka <b><u>alert()</u></b>,</li>
+  <li>do <b><u>okienek formularza</u></b> (pole input, właściwość value),</li>
+  <li>do <b><u>tabeli</u></b> (np. przez innerHTML).</li>
+</ul>
+
+<p><b><u>2. Czym jest funkcja w JS, omów przy użyciu 4 podpunktów?</u></b></p>
+<ul>
+  <li>Jest to <b><u>zbiór zgrupowanych instrukcji</u></b>, które uruchamiamy, podając ich nazwę.</li>
+  <li>Każda funkcja po wywołaniu <b><u>wykonuje swój wewnętrzny kod</u></b>.</li>
+  <li>Funkcja może mieć <b><u>argumenty</u></b>, które wchodzą do jej wnętrza i są tam przetwarzane, np. suma_woj(a, b).</li>
+  <li>Może (nie zawsze) <b><u>zwrócić obliczoną wartość</u></b> zapisaną po słowie kluczowym return.</li>
+</ul>
+
+<p><b><u>3. Omów metody getElementsByName, getElementById, getElementsByTagName.</u></b></p>
+<table>
+  <tr><th>Metoda</th><th>Opis</th></tr>
+  <tr><td><b><u>getElementById("id")</u></b></td><td>dostęp do elementu o konkretnej wartości atrybutu id</td></tr>
+  <tr><td><b><u>getElementsByTagName("znacznik")</u></b></td><td>dostęp do wszystkich elementów o danym typie znacznika, np. P lub DIV</td></tr>
+  <tr><td><b><u>getElementsByName("nazwa")</u></b></td><td>dostęp do wszystkich elementów o konkretnej wartości atrybutu name</td></tr>
+</table>
+
+<p><b><u>4. Omów właściwości innerHTML, innerText, className (każdą osobno).</u></b></p>
+<ul>
+  <li><b><u>innerHTML</u></b> - umożliwia odczyt, zmodyfikowanie, wstawienie albo usunięcie kodu HTML z danego elementu, np. w tabeli.</li>
+  <li><b><u>innerText</u></b> - umożliwia określenie ciągu znaków, który zostanie umieszczony w elemencie.</li>
+  <li><b><u>className</u></b> - umożliwia określenie klasy CSS użytej do prezentacji elementu.</li>
+</ul>
+
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_wojciechowski()">
+</form>
+</body>
+</html>
